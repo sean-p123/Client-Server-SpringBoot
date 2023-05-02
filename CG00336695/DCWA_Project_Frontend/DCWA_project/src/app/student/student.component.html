@@ -1,0 +1,28 @@
+<div>
+    <h2>Students</h2>
+    <table  class="table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>SID</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.id }}</td>
+          <td>{{ student.name }}</td>
+          <td>{{ student.sid }}</td>
+          <td>
+            <button (click)="deleteStudent(student.sid)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div>
+    <a routerLink="/">Go to Home</a><br>
+    <a routerLink="/lecturer">Go to Lecturers</a>
+  </div>

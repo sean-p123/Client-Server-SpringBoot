@@ -1,0 +1,30 @@
+<h1>Update Lecturer</h1>
+
+<div>
+  <label for="lid">Lecturer ID:</label>
+  <span>{{ lecturerLid }}</span>
+</div>
+
+<div>
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="lecturer.name" />
+</div>
+
+<div>
+  <label for="taxBand">Tax Band:</label>
+  <input type="text" id="taxBand" [(ngModel)]="lecturer.taxBand" />
+</div>
+
+<div>
+  <label for="salaryScale">Salary Scale:</label>
+  <input type="text" id="salaryScale" [(ngModel)]="lecturer.salaryScale" />
+</div>
+
+<button (click)="updateLecturer()">Update</button>
+
+<div>
+    <br>
+    <a routerLink="/lecturer">Go to Lecturer Page</a><br>
+    <a routerLink="/student">Go to Student Page</a><br>
+    <a routerLink="/">Go to Home</a><br>
+  </div>
